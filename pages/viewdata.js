@@ -31,7 +31,7 @@ const ViewData = () => {
     try {
       await ddbDocClient.send(
         new DeleteCommand({
-          TableName: "Users",
+          TableName: "Users5",
           Key: {
             id: primaryKeyValue,
             dateAdded: sortKeyValue,
