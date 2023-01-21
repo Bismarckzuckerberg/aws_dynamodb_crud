@@ -18,7 +18,7 @@ const ViewData = () => {
   //   scanning the dynamodb table
   const scanTable = async () => {
     try {
-      data = await ddbDocClient.send(new ScanCommand({ TableName: "Users" }));
+      data = await ddbDocClient.send(new ScanCommand({ TableName: "Users5" }));
       setTableData(data.Items);
       console.log("success", data.Items);
     } catch (err) {
